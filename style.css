@@ -1,0 +1,15 @@
+body {
+    font-family: 'Arial';
+}
+li {
+    list-style-type: none;
+}
+.headerImg {
+    width: 100px;
+    height: 100px;
+}
+
+.middleAlign {
+    display: flex;
+    align-items: center;
+}
