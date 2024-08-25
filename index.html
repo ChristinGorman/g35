@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta property="og:description" content="The best rocket league team in Norway">
-  <meta property="og:image" content="favicon.png">
+  <meta property="og:image" content="https://g35-rl.no/favicon.png">
   <link rel="shortcut icon"
         href="favicon.png"/>
   <meta charset="utf-8"/>
   <link rel="stylesheet" href="style.css"/>
-
+  <script src="https://embed.twitch.tv/embed/v1.js"></script>
 </head>
 <body>
 <h1>
@@ -15,10 +15,16 @@
     <img class="headerImg" src="favicon.png"/><span>G35</span>
   </div>
 </h1>
+<div id="twitch-embed"></div>
+
 <h2>Players</h2>
 <ul>
   <li>
-    Báxtian
+    <a
+        href="https://rocketleague.tracker.network/rocket-league/profile/steam/76561198807516324/overview"
+        target="_blank">
+      Báxtian
+    </a>
   </li>
   <li>
     Toby . . . (aka Joyo Enjoyer)
@@ -30,6 +36,15 @@
     ShawnKz
   </li>
 </ul>
+
+<!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+<script type="text/javascript">
+  new Twitch.Embed("twitch-embed", {
+    width: 800,
+    height: 600,
+    channel: "g35_rl",
+  });
+</script>
 
 </body>
 </html>
