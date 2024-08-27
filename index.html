@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- meta-properties som starter med og: definerer hvordan "preview" av siden vil se ut når du sender folk en link til siden. OG står for "open graph" -->
   <meta property="og:description" content="The best rocket league team in Norway">
   <meta property="og:image" content="https://g35-rl.no/favicon.png">
-  <link rel="shortcut icon"
-        href="favicon.png"/>
+  <!-- shortcut icon er det ikonet som vises i nettleser-fanen når man åpner siden -->
+  <link rel="shortcut icon" href="favicon.png"/>
+  <!-- Charset utf-8 handler bare om hvilke tegn vi kan skrive -->
   <meta charset="utf-8"/>
+  <!-- Link til CSS-fila der "style" er definert. Den er en egen fil ved siden av index.html -->
   <link rel="stylesheet" href="style.css"/>
+  <!-- script hentet fra Twitch, sånn at vi kan vise live-stream av kampene deres på siden uten å måtte gå til twitch -->
   <script src="https://embed.twitch.tv/embed/v1.js"></script>
 </head>
 <body>
@@ -15,6 +19,7 @@
     <img class="headerImg" src="favicon.png"/><span>G35</span>
   </div>
 </h1>
+<!-- Inni denne div'en blir twitch-innholdet vist -->
 <div id="twitch-embed"></div>
 
 <h2>Players</h2>
