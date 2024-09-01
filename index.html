@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- dette gjør at man kan ha egne styling-regler for desktop vs mobil -->
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <!-- meta-properties som starter med og: definerer hvordan "preview" av siden vil se ut når du sender folk en link til siden. OG står for "open graph" -->
   <meta property="og:description" content="The best rocket league team in Norway">
   <meta property="og:image" content="https://g35-rl.no/favicon.png">
@@ -19,28 +21,38 @@
     <img class="headerImg" src="favicon.png"/><span>G35</span>
   </div>
 </h1>
-<!-- Inni denne div'en blir twitch-innholdet vist -->
-<div id="twitch-embed"></div>
 
-<h2>Players</h2>
-<ul>
+<ul class="playerList">
   <li>
-    <a
-        href="https://rocketleague.tracker.network/rocket-league/profile/steam/76561198807516324/overview"
-        target="_blank">
-      Báxtian
+    <a class="playerLink"
+       href="https://rocketleague.tracker.network/rocket-league/profile/steam/76561198807516324/overview"
+       target="_blank">
+      <img class="avatar" src="https://avatars.steamstatic.com/93a49d635da13a469ab64fa2793fcef6f3a92c02_full.jpg" />
+      <span>Báxtian</span>
     </a>
   </li>
   <li>
-    Toby . . . (aka Joyo Enjoyer)
+    <a class="playerLink" href="https://rocketleague.tracker.network/rocket-league/profile/epic/Joyo%20enjoyer/overview">
+      <img src="https://imgsvc.trackercdn.com/url/size(128),fit(cover)/https%3A%2F%2Ftrackercdn.com%2Fcdn%2Frocketleague.tracker.network%2Fimages%2FdefaultAvatar.jpg/image.jpg"
+           class="avatar"/>
+      <span>Toby . . . (aka Joyo Enjoyer)</span>
+    </a>
   </li>
   <li>
-    LeNgocZz
+    <a href="_blank" class="playerLink"  href="https://rocketleague.tracker.network/rocket-league/profile/steam/76561198949194968/overview">
+      <img src="https://avatars.steamstatic.com/f24ae4248eeed6c45c8c8bd0b0714885fcf725ac_full.jpg" class="avatar"  />
+      <span>LeNgocZz</span>
+    </a>
   </li>
   <li>
-    ShawnKz
+    <a class="playerLink" href="https://rocketleague.tracker.network/rocket-league/profile/epic/ShawnIV/overview">
+      <img class="avatar" src="https://imgsvc.trackercdn.com/url/size(128),fit(cover)/https%3A%2F%2Ftrackercdn.com%2Fcdn%2Frocketleague.tracker.network%2Fimages%2FdefaultAvatar.jpg/image.jpg" />
+      <span>ShawnKz</span>
+    </a>
   </li>
 </ul>
+
+<div class="middleAlign centerAlign" id="twitch-embed"></div>
 
 <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
 <script type="text/javascript">
